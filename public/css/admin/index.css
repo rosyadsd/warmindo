@@ -1,0 +1,327 @@
+/* google fonts Link */
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Bree+Serif&family=Courgette&family=Labrada:ital,wght@1,500&family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Bree+Serif&family=Courgette&family=Labrada:ital,wght@1,500&family=Oswald:wght@300&family=Righteous&display=swap");
+
+/* google Fonts
+font-family: 'Alkatra', cursive;  // italic
+font-family: 'Bree Serif', serif;  // normal + bold normal writing
+font-family: 'Courgette', cursive; // italic + fancy (for underline)
+font-family: 'Labrada', serif;    //italic
+font-family: 'Oswald', sans-serif;  //  
+font-family: 'Righteous', cursive; heading
+*/
+
+/* //Common CSS for all */
+
+/* CSS variables */
+:root {
+  --primary-color: rgb(205, 220, 242);
+  --secondary-color: rgba(210, 213, 223, 0.9);
+  --background-color: #f6f9fc;
+  --padding: 0.5rem;
+  --transition: all 0.3s;
+  --border-radius: 0.6rem;
+  --box-shadow: 5px 3px 5px #1f3041;
+  --text-shadow-heading: 2px 2px rgb(155, 191, 247);
+  --text-hover-color: #274050;
+  --text-hover-shadow-color: 1px 0.5px black;
+  --primary: #13c5dd;
+  --secondary: #354f8e;
+  --light: #eff5f9;
+  --dark: #1d2a4d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+  color: black;
+}
+body {
+  background-color: var(--background-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+}
+.bg-color {
+  background-color: var(--secondary-color);
+}
+.bg {
+  background-color: var(--background-color);
+}
+.box-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.btn-shadow {
+  box-shadow: 5px 5px 5px #1f3041;
+}
+.text-shadow {
+  text-shadow: 2px 2px black;
+}
+
+.text-align {
+  text-align: justify;
+}
+/* ============Navber design ============*/
+.navbar {
+  background-color: rgb(205, 220, 242);
+  font-size: 20px;
+  color: black;
+  box-shadow: var(--box-shadow);
+  border-radius: 3px;
+}
+
+.navbar-toggler-icon i {
+  padding: 10px;
+}
+.nav-link,
+.navbar-brand {
+  color: black;
+  text-shadow: var(--text-shadow-heading);
+}
+
+.navbar-brand i {
+  padding: 7px;
+}
+
+.nav-item {
+  margin: 2px;
+  list-style-type: none;
+  background-color: var(--primary-color);
+}
+
+.nav-item:hover {
+  color: var(--text-hover-color);
+}
+
+.nav-link {
+  font-family: "Righteous", cursive;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.nav-link i {
+  padding-right: 5px;
+}
+.nav-link:hover,
+.navbar-brand:hover,
+.nav-link i:hover {
+  color: var(--text-hover-color);
+  text-shadow: var(--text-hover-shadow-color);
+}
+
+/* ==========Navber design ends here========= */
+
+/* ==========home page carasoul design starts here========= */
+
+.carousel-item img {
+  height: 450px;
+  width: 100%;
+}
+
+/* ==========home page carasoul design endss here========= */
+
+/* ==========home page key features design starts here========= */
+
+/* ==========home page key features design endss here========= */
+.heading {
+  color: black;
+  text-shadow: var(--text-shadow-heading);
+  margin-bottom: 0px;
+  font-family: "Righteous", cursive;
+}
+.underline-text {
+  margin-top: 0;
+  border-top: 0;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  color: hsl(221, 85%, 38%);
+  display: flex;
+  flex-direction: column;
+}
+
+.key-features-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.key-features-img img {
+  height: 280px;
+  width: 300px;
+  border-radius: 5px;
+  margin-left: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.card-body {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.card-body p {
+  justify-content: center;
+  align-items: center;
+}
+.paint-card {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.card-container {
+  height: 300px;
+  width: 320px;
+}
+.service-card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+
+  /* background-color: var(--primary-color); */
+}
+
+.service-heading {
+  color: blueviolet;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.service-text {
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 17px;
+}
+
+/* ==========home page our team design starts here========= */
+
+.team-card img {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+}
+.team-card-div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.doc-name {
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.specialist {
+  font-size: small;
+  padding-top: 0px;
+  margin-top: 0px;
+  color: hsl(222, 18%, 40%);
+}
+
+.team-text-div {
+  padding: 5px;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* ==========home page Our team design endss here========= */
+
+/* ==========Footer design starts here========= */
+.footer-container {
+  background-color: var(--primary-color);
+  text-align: center;
+  justify-content: center;
+  height: 6vh;
+  box-shadow: 5px 0px 5px 3px #1f3041;
+  border-radius: 3px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.footer-container .container-fluid {
+  background-color: var(--text-hover-color);
+}
+.footer-container h5 {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/* ==========Footer design ends here========= */
+
+/* ==========Appoinment page design start here========= */
+.form-label {
+  padding-left: 5px;
+}
+.appointment-text {
+  justify-content: center;
+  text-align: justify;
+}
+.appoinment-form {
+  padding-left: 10px;
+}
+/* ==========Appoinment page  design ends here========= */
+
+/* Team Carasoul starts */
+
+/* Team carasoul ends */
+
+/* Back to Top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  z-index: 100;
+}
+/* Media Screen */
+
+/* For Tablet View */
+@media (min-width: 768px) {
+  .team-card img {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+  }
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-width: 640px) {
+  .team-card img {
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .contact-div {
+    height: 150px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-container {
+    padding-left: 20vh;
+  }
+}
